@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    
+    <!-- Bootstrap CSS Online -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Bootstrap CSS Local -->   
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />  
+    <link rel="stylesheet" href="../Projeto Web/css/style.css"/>   
+    
+    <title>Programma de Vacinação</title>
+  </head>
+  <body>  
+        
+  <!-- BARRA DE NAVEGAÇÃO -->
+  <div class="barra-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">COVID-19</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">             
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                PÁGINA INICIAL
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../Projeto Web/index.html">PAGINA INICIAL</a></li>
+                <li><a class="dropdown-item" href="../Projeto Web/cadastro.html">CADASTRO DE PESSOAS</a></li>
+                <li><a class="dropdown-item" href="../Projeto Web/local.html">LOCAIS DE VACINAÇÃO</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../Projeto Web/login-entrar.html">SAIR</a></li>
+              </ul>
+            </li>            
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Busca" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">PROCURAR</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>  
+  <!-- BARRA DE NAVEGAÇÃO -->
+
+  <!-- BANNER INICIAL -->
+  <div class="banner">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="150">
+        </div>        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- BANNER INICIAL -->
+  
+  <!-- PARCIAL -->
+  <div  class="titulo-parcial"> </div>
+    <h1 style="text-align: center;">PARCIAL DO ÍNDICE DE VACINAÇÃO</h1> 
+  <div class="parcial">
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+    </div>
+  </div>
+  <!-- PARCIAL -->
+
+  <!-- TABELA -->
+  <div>  
+    <table class="table table-hover table-dark">
+      <thead>
+        <tr>
+          <th scope="col">POSIÇÃO</th>
+          <th scope="col">INSCRIÇÃO</th>
+          <th scope="col">NOME</th>
+          <th scope="col">IDADE</th>
+          <th scope="col">PROFISSIONAL DA AREA SAUDE</th> 
+          <th scope="col">DOSE 1</th> 
+          <th scope="col">DOSE 2</th>
+          <th scope="col">STATUS</th>        
+        </tr>
+        
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>0245</td>
+          <td>LUIS DE ARAUJO</td>          
+          <td>21</td>
+          <td>SIM</td>
+          <td>SIM</td>
+          <td>NÃO</td>
+          <td>
+            <button type="button" class="btn btn-danger" href="#">EXCLUIR</button>
+          </td>          
+        </tr>
+
+        <tbody>
+          <tr>
+            <th scope="row">2</th>
+            <td>0258</td>
+            <td>CAMILA SOARES</td>          
+            <td>60</td>
+            <td>NÃO</td>
+            <td>SIM</td>
+            <td>NÃO</td>
+            <td>
+              <button type="button" class="btn btn-danger" href="#">EXCLUIR</button>
+            </td>          
+          </tr>
+
+
+          <tbody>
+            <tr>
+              <th scope="row">3</th>
+              <td>0274</td>
+              <td>KAREN VISCONTI</td>          
+              <td>69</td>
+              <td>NÃO</td>
+              <td>NÃO</td>
+              <td>NÃO</td>
+              <td>
+                <button type="button" class="btn btn-danger" href="#">EXCLUIR</button>
+              </td>         
+            </tr>
+      </tbody>
+    </table>
+  </div>
+ <!-- TABELA -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+        
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>     
+  </body>
+</html>
+
+
+
+
+
+
+
+

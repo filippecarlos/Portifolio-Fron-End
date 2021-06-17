@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    
+    <link href="../Projeto Web/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="../Projeto Web/js/bootstrap.min.js"></script>
+    <script hr="../Projeto Web/js/jquery-3.6.0.min.js"></script>
+    <link href="../Projeto Web/css/style.css" rel="stylesheet">    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Programma de Vacinação</title>
+  </head>    
+  <body>
+    <div class="regristro">   
+      <div id="login-overlay" class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel" style="text-align: center;">FORMULARIO DE REGISTRO COVID-19</h4>              
+          </div>          
+        <div class="modal-body">
+          <form id="registerForm" method="POST" >          
+            <div class="form-group">
+              <div class="col-xs-6">
+              <label for="InputName">PRIMEIRO NOME</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" name="first_name">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                </div>
+                <br>
+                <div class="form-group">
+                  <div class="col-xs-6">
+                  <label for="InputName">SEGUNDO NOME</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" name="last_name">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                    <br>  
+                <div class="form-group">
+                  <div class="col-xs-6">
+                  <label for="InputName">E-MAIL</label>
+                    <div class="input-group">
+                      <input type="email" class="form-control" name="e-mail">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                    <br> 
+                  <label for="InputPassword">SENHA</label>
+                  <div class="input-group">
+                    <input type="password" class="form-control" name="password">
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                  </div>
+                  </div> 
+                  <br>           
+                  <div class="form-group">
+                    <div class="input-group-addon">
+                      <input type="submit" name="submit" id="#" value="Submit" href="../Projeto Web/login-entrar.html" class="btn btn-success pull-right" style="background-color: rgb(35, 255, 15);">
+                    </div>
+                  </div>
+            </div>              
+        </form>            
+      </div>
+    </div> 
+    <script type="text/javascript"></script>
+  </body>
+</html>
