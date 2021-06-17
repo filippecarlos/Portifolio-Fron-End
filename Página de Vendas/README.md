@@ -1,6 +1,6 @@
 # Página de vendas - Modelo
 
-#3 Esse projeto de front-end foram usados as seguintes tecnologias:
+# Esse projeto de front-end foram usados as seguintes tecnologias:
 
 - [x] CSS
 - [x] JS
